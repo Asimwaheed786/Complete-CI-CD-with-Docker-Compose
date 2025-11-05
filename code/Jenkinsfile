@@ -2,12 +2,22 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      steps {
+      steps { 
+        // if you are facing an issue regarding the directory, then define the current working directory 
+        // dir("your_folder_path") 
+        // { 
+            // sh 'docker build -t ci-cd-app .'
+        // }
         sh 'docker build -t ci-cd-app .'
       }
     }
     stage('Test') {
       steps {
+        // similarly here as well
+        // dir("your_folder_path") 
+        // { 
+            // sh 'docker-compose up --abort-on-container-exit --build'
+        // }
         sh 'docker-compose up --abort-on-container-exit --build'
       }
     }
