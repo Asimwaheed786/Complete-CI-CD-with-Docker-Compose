@@ -13,8 +13,6 @@ This project demonstrates how Docker is integrated into a CI/CD pipeline to ensu
 
 ## Tasks
 
-### **Task 1: Define a CI/CD Pipeline Scenario**
-
 #### Objective
 Set up a basic pipeline: **Code → Build → Test → Deploy**
 
