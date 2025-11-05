@@ -24,3 +24,10 @@ Set up a basic pipeline: **Code → Build → Test → Deploy**
 3. Build a Docker image from the source code.
 4. Run tests inside the Docker container.
 5. Deploy the application upon successful test completion.
+
+
+## Contact
+
+For questions or feedback, please contact Asim Waheed at waheedasim20@gmail.com
+
+Thank You.
