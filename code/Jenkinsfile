@@ -1,0 +1,20 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh 'docker build -t lab30-ci-cd-app .'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'docker-compose up --abort-on-container-exit --build'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Deploying the container to production...'
+      }
+    }
+  }
+}
